@@ -2,21 +2,23 @@
 
 Quick scaffolded React app using Vite (JavaScript) and OpenWeatherMap.
 
-Setup
+Setup (Windows, PowerShell):
 
 1. Copy `.env.example` to `.env` and add your API key:
 
-```bash
+```powershell
 cp .env.example .env
-# set VITE_WEATHER_API_KEY in .env
+# then open .env and replace the placeholder with your API key (set VITE_WEATHER_API_KEY)
 ```
 
-2. Install dependencies and run dev server:
+2. Install dependencies and start the dev server:
 
-```bash
+```powershell
 npm install
 npm run dev
 ```
+
+3. Open the URL printed by Vite (usually http://localhost:5173).
 
 Usage
 
@@ -25,5 +27,5 @@ Usage
 
 Notes
 
-- Provide a `VITE_WEATHER_API_KEY` from OpenWeatherMap.
-- This is a minimal scaffold — I can add forecast UI, unit toggle, tests, and deploy config next.
+- The app reads `VITE_WEATHER_API_KEY` from `import.meta.env`.
+- Get a free API key at https://openweathermap.org/api (Current Weather Data).
